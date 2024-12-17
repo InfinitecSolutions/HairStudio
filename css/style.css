@@ -7308,7 +7308,7 @@ h1, h2, h3, h4, h5,
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07); }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #eb88ea !important; /*Barra Movil*/
+      background: #28deff !important; /*Barra Movil*/
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
@@ -7829,7 +7829,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fa5bdd;
+    background: #00fffac9;; 
     opacity: 1; }
 
 .appointment-info {
@@ -8929,5 +8929,411 @@ textarea.form-control {
     width: 90%; /* En pantallas más pequeñas, ocupa el 90% del ancho */
   }
 }
+
+
+/* General carousel container */
+#carouselExampleCaptions {
+  position: relative;
+  background-color: #000;  /* Set background color if desired */
+  border-radius: 8px;  /* Rounded corners */
+  overflow: hidden;  /* Ensures no overflow of images or captions */
+}
+
+/* Carousel images */
+#carouselExampleCaptions .carousel-inner img {
+  object-fit: cover;  /* Ensures images cover the entire area */
+  height: 60vh;  /* Set a specific height for images */
+}
+
+/* Carousel captions */
+#carouselExampleCaptions .carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background */
+  color: #fff;  /* White text color */
+  padding: 15px;
+  border-radius: 5px;
+  width: 80%;  /* Make captions not too wide */
+  text-align: center;
+}
+
+/* Title and text inside caption */
+#carouselExampleCaptions .carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#carouselExampleCaptions .carousel-caption p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Carousel indicators (dots) */
+#carouselExampleCaptions 
+
+/* General List Styles */
+.list-group {
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px; /* Limita el ancho máximo para no ocupar toda la pantalla */
+}
+
+/* Estilo para los ítems de la lista */
+.list-group-item {
+  font-size: 1.1rem;  /* Tamaño de fuente adecuado */
+  padding: 15px;      /* Espaciado adecuado */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-bottom: 10px;/* Espaciado entre los ítems */
+  transition: background-color 0.3s ease; /* Efecto suave al pasar el ratón */
+  background-color: #ffffff; /* Fondo blanco por defecto */
+}
+
+/* Efecto hover */
+.list-group-item:hover {
+  background-color: #f8f9fa; /* Fondo claro al pasar el ratón */
+}
+
+/* Indicador de acción en los ítems */
+.list-group-item-action {
+  cursor: pointer; /* Aparece el cursor pointer al pasar el mouse */
+}
+
+/* Colores alternativos para los ítems (opcional) */
+.list-group-item:nth-child(odd) {
+  background-color: #f1f1f1;  /* Fondo para los ítems impares */
+}
+
+.list-group-item:nth-child(even) {
+  background-color: #e9ecef;  /* Fondo para los ítems pares */
+}
+
+/* Bordes redondeados para el primer y último ítem */
+.list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .list-group-item {
+    font-size: 1rem;  /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+    padding: 12px;    /* Ajustar el padding */
+  }
+  
+  .list-group {
+    max-width: 100%;   /* Deja que la lista ocupe el ancho completo en pantallas pequeñas */
+    margin: 10px;      /* Menos margen */
+  }
+}
+
+/* Responsividad para pantallas de teléfonos muy pequeños (menor a 480px) */
+@media (max-width: 480px) {
+  .list-group-item {
+    font-size: 0.9rem;  /* Tamaño de fuente más pequeño */
+    padding: 10px;      /* Reducir padding para más espacio */
+  }
+  
+  .list-group {
+    margin: 5px;        /* Reducir margen en dispositivos móviles muy pequeños */
+  }
+}
+
+/* Estilo personalizado para las tarjetas */
+.card {
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más intensa en hover */
+}
+
+.card-body {
+  padding: 2rem; /* Espaciado interior cómodo */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Aumentar el tamaño del título */
+  font-weight: 600; /* Hacer el título más destacado */
+  color: #333; /* Color oscuro para el título */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.card-text {
+  font-size: 1rem; /* Tamaño de fuente adecuado para las descripciones */
+  color: #555; /* Color más suave para el texto */
+}
+
+.card-text small {
+  color: #888; /* Texto más tenue para descripciones secundarias */
+}
+
+.card-body p {
+  line-height: 1.6; /* Espaciado entre líneas para una mejor legibilidad */
+}
+
+/* Estilo para el contenedor de las tarjetas */
+.container {
+  max-width: 1200px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilo para la fila de tarjetas */
+.row {
+  gap: 1.5rem; /* Espaciado entre las tarjetas */
+}
+
+/* Diseño responsive */
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* En pantallas pequeñas, las tarjetas ocuparán el 100% del ancho */
+  }
+}
+
+/* Estilos generales */
+.ftco-section {
+  padding: 60px 0;
+}
+
+.appointment-info {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con algo de transparencia */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.appointment-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.appointment-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón de Obtener Dirección */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+@media (max-width: 768px) {
+  .ftco-appointment .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-md-2 {
+    display: none;
+  }
+
+  .col-md-4 {
+    max-width: 100%; /* Asegura que las columnas ocupen todo el ancho en pantallas pequeñas */
+    margin: 0 auto;
+  }
+
+  .appointment-info {
+    padding: 20px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 250px; /* Ajustar el tamaño del mapa en pantallas pequeñas */
+  }
+
+  .btn-primary {
+    width: 100%; /* Hace el botón de dirección más grande en móviles */
+    text-align: center;
+  }
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;  /* Espacio desde la parte inferior */
+  right: 20px;   /* Espacio desde la parte derecha */
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: white;
+  font-size: 30px; /* Tamaño inicial del icono */
+  border-radius: 50%; /* Forma redondeada */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Asegura que el botón esté por encima de otros elementos */
+  transition: all 0.3s ease; /* Transición suave para hover */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el icono */
+.whatsapp-btn i {
+  font-size: 1.6rem; /* Tamaño del icono */
+  line-height: 1; /* Alinea el icono */
+  transition: all 0.3s ease;
+}
+
+/* Efecto de pulso */
+.whatsapp-btn:hover {
+  animation: pulso 1.6s infinite;
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Animación de pulso */
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Icono de WhatsApp al pasar el mouse */
+.whatsapp-btn:hover i {
+  font-size: 1.8rem; /* Aumenta ligeramente el tamaño del icono */
+}
+
+/* Estilo para dispositivos móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    bottom: 15px;  /* Ajusta el espaciado inferior en pantallas pequeñas */
+    right: 15px;   /* Ajusta el espaciado a la derecha en pantallas pequeñas */
+    padding: 12px; /* Ajusta el padding */
+  }
+
+  .whatsapp-btn i {
+    font-size: 1.4rem; /* Ajusta el tamaño del icono */
+  }
+}
+
+/* Estilo para pantallas más grandes */
+@media (min-width: 1200px) {
+  .whatsapp-btn {
+    bottom: 20px;  /* Ajuste de espaciado en pantallas grandes */
+    right: 20px;   /* Ajuste de espaciado en pantallas grandes */
+    padding: 18px; /* Aumenta el padding en pantallas grandes */
+  }
+
+  .whatsapp-btn i {
+    font-size: 2rem; /* Aumenta el tamaño del icono en pantallas grandes */
+  }
+}
+/* Estilos generales para la barra flotante */
+.social-bar {
+  position: fixed;
+  top: 50%; /* Centra la barra verticalmente */
+  left: 0;  /* Barra en el lado izquierdo */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-50%); /* Ajusta para que esté centrada */
+}
+
+/* Estilos para cada ícono de red social */
+.social-icon {
+  background-color: #3b5998;  /* Color de fondo por defecto (Facebook) */
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores específicos para cada red social */
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+.social-icon.tiktok {
+  background-color: #000000;
+}
+
+.social-icon.whatsapp {
+  background-color: #25d366;
+}
+
+.social-icon.map {
+  background-color: #ff5e00; /* Color personalizado para el icono de ubicación */
+}
+
+/* Efecto de pulso al pasar el mouse */
+.social-icon:hover {
+  animation: pulso 1.6s infinite;
+  transform: scale(1.1);  /* Aumenta ligeramente el tamaño */
+}
+
+/* Animación de pulso */
+@keyframes pulso {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.6);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .social-bar {
+      left: auto;
+      right: 0;  /* Barra en el lado derecho en pantallas móviles */
+      top: 80%;  /* Ajuste para que no quede tan arriba */
+      transform: translateY(-80%);
+  }
+
+  .social-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 24px;
+  }
+}
+
 
 
